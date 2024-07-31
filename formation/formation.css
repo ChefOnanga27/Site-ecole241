@@ -14,8 +14,13 @@ body {
     overflow-x: hidden;
     background-color: var(--background-color);
   }
-  
-  header {
+  .container {
+    width: 80%;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+header {
     background-color: var(--primary-color);
     color: var(--accent-color);
     /* padding: 0.2rem 0; */
@@ -23,7 +28,6 @@ body {
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    margin-right: 1%;
 }
 
 header.scrolled {
@@ -34,7 +38,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem;
 }
 
 .logo {
@@ -42,14 +45,29 @@ nav {
     /* font-weight: 700; */
    /* color: var(--accent-color); */
    width: 150px;
-   height: 50px;
-   background-color: rgb(202, 26, 26);
+   height: 90px;
+   /* background-color: white; */
    border-radius: 15px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-color);
 }
 
   main {
